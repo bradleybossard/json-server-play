@@ -5,8 +5,9 @@ module.exports = function() {
     people: _.times(100, function(n) {
       return {
         id: n,
-        name: faker.name.findName(),
-        avatar: faker.internet.avatar()
+        firstName: faker.name.firstName(),
+        lastName: faker.name.lastName(),
+        email: faker.internet.email(),
       }
     })
   }
